@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.ap.AnotaAi.TelaInicial">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Notas"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center" />
+
+    <ListView
+        android:id="@+id/listaDeNotas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.92"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/botaoCriarAnotacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:onClick="abrirTelaCriarNovaAnotacao"
+        android:text="CRIAR NOVA ANOTAÇÃO"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
